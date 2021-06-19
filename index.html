@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Library</title>
+</head>
+<body>
+    <div>
+        <h1>Online Library</h1>
+    </div>
+    
+    <div id="addDiv">
+        <button id="addBtn">Add Book</button>
+    </div>
+
+    <div id="formDiv" class="hide">
+        <h2>Add/Edit Book</h2>
+        <form>
+            <input id="title" autofocus type="text" name="title" placeholder="Title">
+            <input id="author" type="text" name="author" placeholder="Author">
+            <input id="pages" type="text" name="pages" placeholder="Pages">
+            <p>Read Book?</p>
+            <input type="checkbox" id="read" name="read" value="read">
+            <label for="read">Read</label>
+        </form>
+        <button id="submit">Submit</button>
+        <button id="back">Back</button>
+    </div>
+    
+    <div id="tableDiv">
+        <h2>Library</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Read</th>
+                </tr>
+            </thead>
+            <tbody id="tr">
+                <tr>
+                    <td>Harry Potter 1</td>
+                    <td>J K Rowling</td>
+                    <td>295 Pages</td>
+                    <td>Not Read</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
