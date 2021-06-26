@@ -6,11 +6,13 @@ let pages;
 let read;
 
 // Book constructor
-function Book(a, b, c, d) {
-    this.title = a
-    this.author = b
-    this.pages = c
-    this.read = d
+class Book {
+    constructor(a, b, c, d) {
+        this.title = a;
+        this.author = b;
+        this.pages = c;
+        this.read = d;
+    }
 }
 
 // Add book to library
@@ -90,6 +92,7 @@ function readyRemove() {
 
     for (let i = 0; i < myLibrary.length; i++) {
         elements.push(document.querySelector(`#book${i}`))
+        elements[i].setAttribute('style', 'background-color: red')
         elements[i].addEventListener('click', () => {
             removeBook(i)
         });
